@@ -36,142 +36,75 @@ for(linha = 0; linha < 10; linha++)
     {
         td = document.createElement("td");
 
-        if(sim[linha][coluna] == 1)
+        switch(sim[linha][coluna])
         {
-            td.style.background = "red";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 2)
-        {
-            td.style.background = "#8a00d4";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 3)
-        {
-            td.style.background = "#d527b7";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 4)
-        {
-            td.style.background = "#f9c46b";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 5)
-        {
-            td.style.background = "#454d66";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 6)
-        {
-            td.style.background = "#58b368";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 7)
-        {
-            td.style.background = "#343090";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 8)
-        {
-            td.style.background = "#ffff00";
-            td.style.color = "black";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 9)
-        {
-            td.style.background = "#99ff00";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else if(sim[linha][coluna] == 10)
-        {
-            td.style.background = "#ffcc00";
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
-        }
-        else
-        {
-            td.append(matriz[linha][coluna]);
-            tr.append(td);
+            case 1:
+                td.style.background = "red";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 2:
+                td.style.background = "#8a00d4";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 3:
+                td.style.background = "#d527b7";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 4:
+                td.style.background = "#f9c46b";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 5:
+                td.style.background = "#454d66";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 6:
+                td.style.background = "#58b368";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 7:
+                td.style.background = "#343090";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 8:
+                td.style.background = "#ffff00";
+                td.style.color = "black";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 9:
+                td.style.background = "#99ff00";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            case 10:
+                td.style.background = "#ffcc00";
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break;
+
+            default:
+                td.append(matriz[linha][coluna]);
+                tr.append(td);
+            break; 
         }
     }
 
     tabela.appendChild(tr);
-}
-
-switch(sim[linha][coluna])
-{
-    case 1:
-        td.style.background = "red";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 2:
-        td.style.background = "#8a00d4";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 3:
-        td.style.background = "#d527b7";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 4:
-        td.style.background = "#f9c46b";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 5:
-        td.style.background = "#454d66";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 6:
-        td.style.background = "#58b368";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 7:
-        td.style.background = "#343090";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 8:
-        td.style.background = "#ffff00";
-        td.style.color = "black";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 9:
-        td.style.background = "#99ff00";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    case 10:
-        td.style.background = "#ffcc00";
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-    break;
-
-    default:
-        td.append(matriz[linha][coluna]);
-        tr.append(td);
-        break 
 }
